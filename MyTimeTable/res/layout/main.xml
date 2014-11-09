@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff222222"
+    >
+<TextView
+	android:layout_width="fill_parent"
+    android:layout_height="70px"
+    android:text="课程表"
+    android:textSize="20px"
+    android:gravity="center"
+  />
+<GridView 
+	android:id="@+id/weekday"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="7"
+    android:horizontalSpacing="10px"
+    android:verticalSpacing="10px"
+    android:stretchMode="columnWidth"
+    android:layout_marginLeft="30px"
+/>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+<GridView 
+	android:id="@+id/gtable"
+	android:layout_marginTop="5px"
+	android:layout_width="30px"
+    android:layout_height="wrap_content"
+    android:numColumns="1"
+    android:horizontalSpacing="10px"
+    android:verticalSpacing="10px"
+    android:stretchMode="columnWidth"
+/>
+<GridView 
+	android:id="@+id/gclass"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numColumns="7"
+    android:horizontalSpacing="10px"
+    android:verticalSpacing="10px"
+    android:stretchMode="columnWidth"
+    android:background="#ff111111"
+/>
+</LinearLayout>
+</LinearLayout>
